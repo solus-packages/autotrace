@@ -1,6 +1,6 @@
 name       : autotrace
 version    : 0.31.1
-release    : 1
+release    : 2
 source     :
     - http://internode.dl.sourceforge.net/project/autotrace/AutoTrace/0.31.1/autotrace-0.31.1.tar.gz : 5a1a923c3335dfd7cbcccb2bbd4cc3d68cafe7713686a2f46a1591ed8a92aff6
 license    :
@@ -10,6 +10,7 @@ summary    : A program for converting bitmap to vector graphics
 description: |
     AutoTrace - a program for converting bitmap to vector graphics. The aim of the AutoTrace project is the development of a freely available application similar to CorelTrace or Adobe Streamline.
 setup      : |
+    %patch -p1 < $pkgfiles/security/cve-2013-1953.patch
     ./configure --prefix=/usr --disable-static
 build      : |
     %make
