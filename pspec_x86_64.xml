@@ -22,9 +22,9 @@
             <Dependency release="current">autotrace</Dependency>
         </RuntimeDependencies>
         <Files>
+            <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/usr/lib/lib*.so</Path>
             <Path fileType="data">/usr/lib/pkgconfig</Path>
-            <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
     <Package>
@@ -34,15 +34,15 @@
 </Description>
         <PartOf>desktop.multimedia</PartOf>
         <Files>
-            <Path fileType="library">/usr/lib/lib*.so.*</Path>
             <Path fileType="data">/usr/share/aclocal</Path>
             <Path fileType="data">/usr/man/man1</Path>
             <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/lib*.so.*</Path>
         </Files>
     </Package>
     <History>
-        <Update release="2">
-            <Date>2015-06-27</Date>
+        <Update release="3">
+            <Date>2015-07-28</Date>
             <Version>0.31.1</Version>
             <Comment>Packaging update</Comment>
             <Name>Ikey Doherty</Name>
