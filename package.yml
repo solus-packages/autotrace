@@ -1,6 +1,6 @@
 name       : autotrace
 version    : 0.31.1
-release    : 4
+release    : 5
 source     :
     - http://internode.dl.sourceforge.net/project/autotrace/AutoTrace/0.31.1/autotrace-0.31.1.tar.gz : 5a1a923c3335dfd7cbcccb2bbd4cc3d68cafe7713686a2f46a1591ed8a92aff6
 license    :
