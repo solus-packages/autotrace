@@ -2,16 +2,29 @@
     <Source>
         <Name>autotrace</Name>
         <Packager>
-            <Name>Ikey Doherty</Name>
-            <Email>ikey@solus-project.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Packager>
         <License>GPL-2.0</License>
         <License>LGPL-2.1</License>
+        <PartOf>multimedia.graphics</PartOf>
         <Summary xml:lang="en">A program for converting bitmap to vector graphics</Summary>
         <Description xml:lang="en">AutoTrace - a program for converting bitmap to vector graphics. The aim of the AutoTrace project is the development of a freely available application similar to CorelTrace or Adobe Streamline.
 </Description>
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
+    <Package>
+        <Name>autotrace</Name>
+        <Summary xml:lang="en">A program for converting bitmap to vector graphics</Summary>
+        <Description xml:lang="en">AutoTrace - a program for converting bitmap to vector graphics. The aim of the AutoTrace project is the development of a freely available application similar to CorelTrace or Adobe Streamline.
+</Description>
+        <PartOf>multimedia.graphics</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
     <Package>
         <Name>autotrace-devel</Name>
         <Summary xml:lang="en">Development files for autotrace</Summary>
@@ -19,34 +32,22 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="current">autotrace</Dependency>
+            <Dependency release="6">autotrace</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include</Path>
-            <Path fileType="library">/usr/lib/lib*.so</Path>
-            <Path fileType="data">/usr/lib/pkgconfig</Path>
-        </Files>
-    </Package>
-    <Package>
-        <Name>autotrace</Name>
-        <Summary xml:lang="en">A program for converting bitmap to vector graphics</Summary>
-        <Description xml:lang="en">AutoTrace - a program for converting bitmap to vector graphics. The aim of the AutoTrace project is the development of a freely available application similar to CorelTrace or Adobe Streamline.
-</Description>
-        <PartOf>desktop.multimedia</PartOf>
-        <Files>
-            <Path fileType="data">/usr/man/man1</Path>
-            <Path fileType="library">/usr/lib/lib*.so.*</Path>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="data">/usr/share/aclocal</Path>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
+            <Path fileType="data">/usr/share/aclocal/*.m4</Path>
         </Files>
     </Package>
     <History>
-        <Update release="5">
-            <Date>2016-03-08</Date>
+        <Update release="6">
+            <Date>2017-02-21</Date>
             <Version>0.31.1</Version>
             <Comment>Packaging update</Comment>
-            <Name>Ikey Doherty</Name>
-            <Email>ikey@solus-project.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Update>
     </History>
 </PISI>
